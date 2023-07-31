@@ -1,0 +1,16 @@
+.finanSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.formValueContainer{
+    max-width: 355px;
+    width: 100%;
+}
+
+@media (min-width:600px) {
+    .finanSection{
+        flex-direction: row;
+        gap: 60px;
+    }
+}

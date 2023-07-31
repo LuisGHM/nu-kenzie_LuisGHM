@@ -1,0 +1,14 @@
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    gap: 17px;
+    max-width: 560px;
+    width: 100%;
+}
+
+.ulListContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

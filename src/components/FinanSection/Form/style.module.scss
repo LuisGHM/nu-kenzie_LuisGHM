@@ -1,0 +1,12 @@
+.form{
+    border: 1px solid var(--color-grey-3);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selectOne{
+    width: 100%;
+    margin-bottom: 26px;
+}

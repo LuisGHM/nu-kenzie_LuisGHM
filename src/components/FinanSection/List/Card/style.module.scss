@@ -1,0 +1,35 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-grey-1);
+    border-left: solid 5px var(--color-grey-2);
+    padding: 10px 14px;
+
+    &.entrada{
+        border-left: solid 5px var(--color-secondary);
+    }
+}
+
+.nameTypeContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.valueBtnContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width:600px){
+    .cardContainer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button{
+        align-self: flex-end;
+    }
+}

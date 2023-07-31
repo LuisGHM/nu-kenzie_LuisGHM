@@ -1,0 +1,49 @@
+%title{
+    font-family: var(--font-primary);
+    font-weight: bold;
+    color: var(--color-grey-4);
+}
+
+%text{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: var(--color-grey-4)
+}
+
+.title1{
+    @extend %title;
+    font-size: 38px;
+}
+
+.title2{
+    @extend %title;
+    font-size: 22px;
+}
+
+.title3{
+    @extend %title;
+    font-size: 16px;
+
+    &.pink{
+        color: var(--color-primary)
+    }
+}
+
+.title4{
+    @extend %title;
+    font-size: 12px;
+}
+
+.headline{
+    @extend %text;
+    font-size: 16px;
+}
+
+.text{
+    @extend %text;
+    font-size: 12px;
+    &.grey{
+        color: var(--color-grey-3);
+    }
+}
+
