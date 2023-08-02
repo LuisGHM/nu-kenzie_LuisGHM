@@ -1,5 +1,5 @@
-import { DefaultTemplate } from "../../components/DefaultTemplate"
-import { FinanSection } from "../../components/FinanSection"
+import { DefaultTemplate } from "../../components/DefaultTemplate";
+import { FinanSection } from "../../components/FinanSection";
 
 export const HomePage = () =>{
     return(

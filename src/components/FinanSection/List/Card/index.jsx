@@ -11,7 +11,7 @@ export const Card = ({iten, deleteFin }) => {
         </div>
         <div className={styles.valueBtnContainer}>
             <span className="text">{formattedValue}</span>
-            <button className={`${styles.button} btn-small`} onClick={() => deleteFin(iten.description)}>Excluir</button>
+            <button className={`${styles.button} btn-small`} onClick={() => deleteFin(iten)}>Excluir</button>
         </div>
     </li>
   );

@@ -14,9 +14,6 @@ export const FinanSection = () =>{
     const [finanList, setFinanList] = useState(obejctDefault);
     const [itensFinanList, setItensFinanList] = useState([]);
 
-    console.log(finanList);
-    console.log(itensFinanList);
-
     return(
         <section>
             <div className="container">

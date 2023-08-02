@@ -4,7 +4,7 @@ export const InputForm = ({label, type, placeholder, subText, min, value, setFin
     return(
         <div className={styles.labels}>
             <label htmlFor="" className="text">{label}</label>
-            <input className={`${styles.input} input-text`} type={type} placeholder={placeholder} min={min} value={value} onChange={(e) => setFinanList({ ...finanList, [typeFor]: e.target.value })} />
+            <input required className={`${styles.input} input-text`} type={type} placeholder={placeholder} min={min} value={value} onChange={(e) => setFinanList({ ...finanList, [typeFor]: e.target.value })} />
             <p className={`text grey`}>{subText}</p>
         </div>
     )
