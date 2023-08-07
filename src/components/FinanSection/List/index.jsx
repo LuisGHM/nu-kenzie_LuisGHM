@@ -1,14 +1,12 @@
 import { Card } from "./Card";
 import styles from "./style.module.scss";
 
+
 export const List = ({itensFinanList, setItensFinanList}) =>{
-    const deleteFin = (key) => {
-        const newList = itensFinanList.filter(
-          (fin) =>
-            fin.description !== key.description ||
-            fin.value !== key.value ||
-            fin.type !== key.type
-        );
+    const deleteFin = (card) => {
+        console.log(card);
+        const newList = itensFinanList.filter((fin) => fin.id !== card.id);
+        console.log(newList);
         setItensFinanList(newList);
       };
       

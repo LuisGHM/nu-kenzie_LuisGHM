@@ -1,5 +1,6 @@
 import { InputForm } from "./InputForm";
 import styles from "./style.module.scss";
+import { v4 as uuidv4 } from "uuid";
 
 export const Form = ({ finanList, setFinanList, itensFinanList, setItensFinanList }) => {
   const handleSelectChange = (e) => {
@@ -10,10 +11,12 @@ export const Form = ({ finanList, setFinanList, itensFinanList, setItensFinanLis
   const submit = (e) => {
     e.preventDefault();
     const newTransaction = {
+      id: uuidv4(), 
       description: finanList.description,
       value: finanList.value,
       type: finanList.type,
     };
+    console.log(newTransaction);
     setItensFinanList([...itensFinanList, newTransaction]);
     setFinanList({
       description: "",
